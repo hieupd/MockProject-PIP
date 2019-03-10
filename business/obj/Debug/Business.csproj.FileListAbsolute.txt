@@ -1,0 +1,2 @@
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\business\obj\Debug\Business.csprojAssemblyReference.cache
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\business\obj\Debug\Business.csproj.CoreCompileInputs.cache

@@ -1,0 +1,15 @@
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\bin\Debug\DAL.dll.config
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\bin\Debug\DAL.dll
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\bin\Debug\DAL.pdb
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\bin\Debug\EntityFramework.dll
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\bin\Debug\Model.dll
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\bin\Debug\Model.pdb
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\bin\Debug\Model.dll.config
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\bin\Debug\EntityFramework.xml
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\obj\Debug\DAL.dll
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\obj\Debug\DAL.pdb

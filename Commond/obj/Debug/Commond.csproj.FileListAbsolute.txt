@@ -1,0 +1,6 @@
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Commond\bin\Debug\Commond.dll
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Commond\bin\Debug\Commond.pdb
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Commond\obj\Debug\Commond.csprojAssemblyReference.cache
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Commond\obj\Debug\Commond.csproj.CoreCompileInputs.cache
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Commond\obj\Debug\Commond.dll
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Commond\obj\Debug\Commond.pdb

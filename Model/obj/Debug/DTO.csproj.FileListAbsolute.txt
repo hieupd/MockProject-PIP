@@ -1,0 +1,12 @@
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Model\bin\Debug\Model.dll.config
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Model\bin\Debug\Model.dll
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Model\bin\Debug\Model.pdb
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Model\bin\Debug\EntityFramework.dll
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Model\bin\Debug\EntityFramework.xml
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Model\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Model\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Model\obj\Debug\DTO.csproj.CopyComplete
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Model\obj\Debug\Model.dll
+D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\Model\obj\Debug\Model.pdb
