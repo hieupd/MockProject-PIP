@@ -62,12 +62,17 @@ namespace Business
             return 0;
         }
 
+        public int Insert(Project item, IDictionary<string, string> staffIds, List<string> error)
+        {
+            throw new NotImplementedException();
+        }
+
         public void RollbackTransaction()
         {
             throw new NotImplementedException();
         }
 
-        public int Update(Project item, List<string> error)
+        public int Update(Project item, IDictionary<string, string> staffIds, List<string> error)
         {
             throw new NotImplementedException();
         }
