@@ -1,2 +1,25 @@
 D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\business\obj\Debug\Business.csprojAssemblyReference.cache
 D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\MockProject-PIP\business\obj\Debug\Business.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\MockProject-PIP\business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\business.dll.config
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\business.dll
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\business.pdb
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\Commond.dll
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\Model.dll
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\Repository.dll
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\DAL.dll
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\Commond.pdb
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\Model.pdb
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\Model.dll.config
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\Repository.pdb
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\Repository.dll.config
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\DAL.pdb
+C:\Users\Admin\Desktop\MockProject-PIP\business\bin\Debug\DAL.dll.config
+C:\Users\Admin\Desktop\MockProject-PIP\business\obj\Debug\Business.csproj.CopyComplete
+C:\Users\Admin\Desktop\MockProject-PIP\business\obj\Debug\business.dll
+C:\Users\Admin\Desktop\MockProject-PIP\business\obj\Debug\business.pdb

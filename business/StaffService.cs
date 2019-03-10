@@ -38,5 +38,20 @@ namespace Business
         {
             throw new NotImplementedException();
         }
+
+        public void BeginTransaction()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CommitTransaction()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RollbackTransaction()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

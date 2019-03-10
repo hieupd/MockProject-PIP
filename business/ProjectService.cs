@@ -9,6 +9,16 @@ namespace Business
 {
     public class ProjectService : IProjectService
     {
+        public void BeginTransaction()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CommitTransaction()
+        {
+            throw new NotImplementedException();
+        }
+
         public int Delete(object Id, List<string> error)
         {
             throw new NotImplementedException();
@@ -30,6 +40,11 @@ namespace Business
         }
 
         public int Insert(Project item, List<string> error)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RollbackTransaction()
         {
             throw new NotImplementedException();
         }

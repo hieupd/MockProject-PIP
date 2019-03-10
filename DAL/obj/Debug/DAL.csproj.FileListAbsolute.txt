@@ -13,3 +13,18 @@ D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\obj\Debug\DAL.csp
 D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\obj\Debug\DAL.dll
 D:\Fresher\mock project\MockUpProject(PIP)\MockProject_PIP\DAL\obj\Debug\DAL.pdb
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\bin\Debug\DAL.dll.config
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\bin\Debug\DAL.dll
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\bin\Debug\DAL.pdb
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\bin\Debug\Model.dll
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\bin\Debug\Model.pdb
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\bin\Debug\Model.dll.config
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\obj\Debug\DAL.dll
+C:\Users\Admin\Desktop\MockProject-PIP\DAL\obj\Debug\DAL.pdb
