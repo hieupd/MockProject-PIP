@@ -21,4 +21,3 @@ C:\Users\Admin\Desktop\MockProject-PIP\Model\obj\Debug\DTO.csproj.CoreCompileInp
 C:\Users\Admin\Desktop\MockProject-PIP\Model\obj\Debug\DTO.csproj.CopyComplete
 C:\Users\Admin\Desktop\MockProject-PIP\Model\obj\Debug\Model.dll
 C:\Users\Admin\Desktop\MockProject-PIP\Model\obj\Debug\Model.pdb
-C:\Users\Admin\Desktop\MockProject-PIP\Model\obj\Debug\DTO.csprojAssemblyReference.cache
