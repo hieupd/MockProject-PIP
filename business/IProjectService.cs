@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Business
 {
-    public interface IProjectService:IDeleteService
+    public interface IProjectService
     {
         int Insert(Project item, IDictionary<string, string> staffIds, List<string> error);
         int Update(Project item, IDictionary<string, string> staffIds,List<string> error);
