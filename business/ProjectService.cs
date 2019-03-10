@@ -1,4 +1,5 @@
 ﻿using DTO;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,11 @@ namespace Business
 {
     public class ProjectService : IProjectService
     {
+        private IProjectRepository projectRepository;
+        public ProjectService()
+        {
+            projectRepository = new ProjectRepository();
+        }
         public void BeginTransaction()
         {
             throw new NotImplementedException();
@@ -41,7 +47,19 @@ namespace Business
 
         public int Insert(Project item, List<string> error)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (Validate(item, error))
+                {
+                    projectRepository.Insert(item);
+                    return projectRepository.Save();
+                }
+            }
+            catch (Exception ex)
+            {
+                error.Add(ex.Message);
+            }
+            return 0;
         }
 
         public void RollbackTransaction()
