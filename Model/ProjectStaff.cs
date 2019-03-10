@@ -27,7 +27,9 @@ namespace DTO
         [MaxLength(20,ErrorMessage = "Character length is over 20")]
         public DateTime AddOn { get; set; }
         public DateTime ModifierDate { get; set; }
-
+        [Display(Name = "Role In Project")]
+        [Required(ErrorMessage = "Please enter Role In Project")]
+        public string RoleInProject { get; set; }
         public virtual Project Project { get; set; }
         public virtual Staff Staff { get; set; }
     }

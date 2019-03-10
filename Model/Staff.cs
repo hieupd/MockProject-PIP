@@ -14,7 +14,8 @@ namespace DTO
         [Key]
         [Display(Name = "Staff ID")]
         [Required(ErrorMessage = "Please enter staff id")]
-        public int StaffId { get; set; }
+        [MaxLength]
+        public string StaffId { get; set; }
         [Display(Name = "Staff Name")]
         [Required(ErrorMessage ="Please enter staff name")]
         [MaxLength(200,ErrorMessage = "Character length is over 200")]

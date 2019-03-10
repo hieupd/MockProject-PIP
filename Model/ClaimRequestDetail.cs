@@ -33,7 +33,6 @@ namespace DTO
         [Display(Name = "Remarks")]
         public string Remarks { get; set; }
 
-        [Display(Name = "Claim Request Id")]
         [ForeignKey("ClaimRequest")]
         [Required(ErrorMessage = "Please enter Claim Request Id")]
         public int ClaimRequestId { get; set; }
