@@ -7,8 +7,16 @@ using System.Threading.Tasks;
 
 namespace Business
 {
-    public interface IProjectService:IService<Project>,IDeleteService
+    public interface IProjectService:IDeleteService
     {
+        int Insert(Project item, IDictionary<string, string> staffIds, List<string> error);
+        int Update(Project item, IDictionary<string, string> staffIds,List<string> error);
+        ICollection<Project> GetAll(List<string> error);
+        Project GetById(object id, List<string> error);
+        bool Validate(Project item, List<string> error);
+        void BeginTransaction();
+        void CommitTransaction();
+        void RollbackTransaction();
         IEnumerable<Staff> GetAllStaffByProjectId(object projectId);
     }
 }
