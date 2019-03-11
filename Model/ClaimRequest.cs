@@ -33,6 +33,7 @@ namespace DTO
 
         [Display(Name = "Approver Id")]
         [Required(ErrorMessage = "Please enter Approver Id")]
+        [ForeignKey("Approver")]
         public int ApproverId { get; set; }
 
         [Display(Name = "Created Date")]
@@ -46,7 +47,7 @@ namespace DTO
         public DateTime? SubmittedDate { get; set; }
         [Required(ErrorMessage = "Please enter AuditTrail")]
         public string AuditTrail { get; set; }
-
+        public virtual Staff Approver { get; set; }
         public virtual Staff Staff { get; set; }
         public virtual Project Project { get; set; }
         public virtual ICollection<ClaimRequestDetail> ClaimRequestDetails { get; set; }
