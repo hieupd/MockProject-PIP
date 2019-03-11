@@ -61,7 +61,7 @@ namespace UnitTest
         [TestMethod]
         public void InsertStaff()
         {
-            var result = _service.Insert(staff, null);
+            var result = _service.Insert(staff, new List<string>());
             Assert.AreNotEqual(0, result);
         }
 
@@ -143,7 +143,8 @@ namespace UnitTest
         [TestMethod]
         public void UpdateStaffId1()
         {
-            staff.StaffId = "2";
+            _service.Insert(staff, null);
+            staff.StaffId = "1";
             staff.StaffName = "D";
             staff.Email = "c@example.com";
             staff.CardNumber = "CN000001";
@@ -159,6 +160,7 @@ namespace UnitTest
         [TestMethod]
         public void DeleteStaffId1()
         {
+            _service.Insert(staff,null);
             var result = _service.Delete("1", null);
             Assert.AreNotEqual(0, result);
         }
@@ -166,6 +168,7 @@ namespace UnitTest
         [TestMethod]
         public void DeleteStaffIdString()
         {
+            _service.Insert(staff, null);
             var result = _service.Delete("aa", null);
             Assert.AreEqual(0, result);
         }

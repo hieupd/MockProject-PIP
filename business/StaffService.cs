@@ -83,14 +83,6 @@ namespace Business
             {
                 return false;
             }
-            if (item.DepartmentId > depts[depts.Count - 1].DepartmentId)
-            {
-                return false;
-            }
-            if (item.JobRankId > jRanks[jRanks.Count - 1].JobRankId)
-            {
-                return false;
-            }
             if (item.StaffName.Length > 200 || item.CardNumber.Length > 50 || item.Email.Length > 50)
             {
                 return false;

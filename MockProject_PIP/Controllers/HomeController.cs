@@ -14,7 +14,6 @@ namespace MockProject_PIP.Controllers
         {
             return View();
         }
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
