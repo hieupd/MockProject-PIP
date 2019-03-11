@@ -13,8 +13,8 @@ namespace DTO
     {
         [Key]
         [Display(Name = "Staff ID")]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Required(ErrorMessage = "Please enter staff id")]
-        [MaxLength]
         public string StaffId { get; set; }
         [Display(Name = "Staff Name")]
         [Required(ErrorMessage ="Please enter staff name")]

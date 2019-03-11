@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClaimRequestTest.cs" />
+    <Compile Include="StaffTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +68,10 @@
     <ProjectReference Include="..\business\Business.csproj">
       <Project>{b76f96f6-206a-4ade-9a25-17f77996c417}</Project>
       <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\DTO.csproj">
+      <Project>{76ef850b-6e52-4c9b-9ff5-6cfd0fb10e7c}</Project>
+      <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

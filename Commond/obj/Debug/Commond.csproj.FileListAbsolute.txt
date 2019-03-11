@@ -9,3 +9,9 @@ C:\Users\Admin\Desktop\MockProject-PIP\Commond\bin\Debug\Commond.pdb
 C:\Users\Admin\Desktop\MockProject-PIP\Commond\obj\Debug\Commond.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\MockProject-PIP\Commond\obj\Debug\Commond.dll
 C:\Users\Admin\Desktop\MockProject-PIP\Commond\obj\Debug\Commond.pdb
+D:\MyGitHub\HieuPD_MockProject_PIP\MockProject-PIP\Commond\bin\Debug\Commond.dll
+D:\MyGitHub\HieuPD_MockProject_PIP\MockProject-PIP\Commond\bin\Debug\Commond.pdb
+D:\MyGitHub\HieuPD_MockProject_PIP\MockProject-PIP\Commond\obj\Debug\Commond.csprojAssemblyReference.cache
+D:\MyGitHub\HieuPD_MockProject_PIP\MockProject-PIP\Commond\obj\Debug\Commond.csproj.CoreCompileInputs.cache
+D:\MyGitHub\HieuPD_MockProject_PIP\MockProject-PIP\Commond\obj\Debug\Commond.dll
+D:\MyGitHub\HieuPD_MockProject_PIP\MockProject-PIP\Commond\obj\Debug\Commond.pdb

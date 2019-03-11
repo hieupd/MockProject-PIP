@@ -32,7 +32,6 @@ namespace DTO
         public int ProjectId { get; set; }
 
         [Display(Name = "Approver Id")]
-        [ForeignKey("Approver")]
         [Required(ErrorMessage = "Please enter Approver Id")]
         public int ApproverId { get; set; }
 
@@ -49,7 +48,6 @@ namespace DTO
         public string AuditTrail { get; set; }
 
         public virtual Staff Staff { get; set; }
-        public virtual Staff Approver { get; set; }
         public virtual Project Project { get; set; }
         public virtual ICollection<ClaimRequestDetail> ClaimRequestDetails { get; set; }
     }

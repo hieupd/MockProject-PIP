@@ -21,10 +21,7 @@ namespace UnitTest
         [TestMethod]
         public void ClaimRequestIvalid()
         {
-            claimRequest= new ClaimRequest
-            {
-                
-            }
+            
         }
     }
 }
