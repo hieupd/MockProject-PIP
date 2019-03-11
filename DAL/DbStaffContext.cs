@@ -20,5 +20,6 @@ namespace DAL
         public DbSet<Project> Projects { get; set; }
         public DbSet<ProjectStaff> ProjectStaff { get; set; }
         public DbSet<ClaimRequest> ClaimRequests { get; set; }
+        public DbSet<ClaimRequestDetail> ClaimRequestDetails { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using DTO;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,10 +20,10 @@ namespace Business
         void CommitTransaction();
         void RollbackTransaction();
 
-        int ApproveRequest(int claimId, string currentUser, ApproveType approveType,List<string> error);
-        void Download(List<string> error);
-        IEnumerable<ClaimRequest> GetByOneOrMoreStatus(string status,List<string> error);
-        IEnumerable<ClaimRequest> GetMyClaimByOneOrMoreStatus(string staffId, string status, List<string> error);
+        int ApproveRequest(string claimIds, string currentUser, ApproveType approveType,List<string> error);
+        Stream Download(List<string> error);
+        IEnumerable<ClaimRequest> GetByOneOrMoreStatus(string[]status,List<string> error);
+        IEnumerable<ClaimRequest> GetMyClaimByOneOrMoreStatus(string staffId, string[]status, List<string> error);
         void SendMail(List<string> error, string emailTo, string subject, string body);
     }
 }

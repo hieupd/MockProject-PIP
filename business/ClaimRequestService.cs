@@ -10,6 +10,7 @@ using System.Net.Mail;
 using System.Net;
 using System.Runtime.Remoting.Messaging;
 using System.Configuration;
+using System.IO;
 
 namespace Business
 {
@@ -21,66 +22,76 @@ namespace Business
             requestRepository = new ClaimRequestRepository();
         }
 
-        public int ApproveRequest(int claimId, string staffId, ApproveType approveType, List<string> error)
+        public int ApproveRequest(string claimIds, string staffId, ApproveType approveType, List<string> error)
         {
-            ClaimRequest claimRequest = requestRepository.GetById(claimId);
-            if (claimRequest == null)
-            {
-                error.Add("Claim Request is not exists");
-                return 0;
-            }
-            switch (approveType)
-            {
-                case ApproveType.Submit:
-                    if(claimRequest.Status.Equals(ClaimStatus.DRAFT))
-                    {
-                        claimRequest.Status = ClaimStatus.PENDING_APPROVAL;
-                    }
-                    break;
-                case ApproveType.Approve:
-                    if (claimRequest.Status.Equals(ClaimStatus.PENDING_APPROVAL))
-                    {
-                        claimRequest.Status = ClaimStatus.APPROVED;
-                    }
-                    break;
-                case ApproveType.Return:
-                    if (claimRequest.Status.Equals(ClaimStatus.PENDING_APPROVAL))
-                    {
-                        claimRequest.Status = ClaimStatus.DRAFT;
-                    }
-                    break;
-                case ApproveType.Reject:
-                    if (claimRequest.Status.Equals(ClaimStatus.DRAFT))
-                    {
-                        claimRequest.Status = ClaimStatus.PENDING_APPROVAL;
-                    }
-                    break;
-                case ApproveType.Paid:
-                    if (claimRequest.Status.Equals(ClaimStatus.APPROVED))
-                    {
-                        claimRequest.Status = ClaimStatus.PAID;
-                    }
-                    break;
-                case ApproveType.Cancel:
-                    if (claimRequest.Status.Equals(ClaimStatus.DRAFT))
-                    {
-                        claimRequest.Status = ClaimStatus.CANCELLED;
-                    }
-                    break;
-                default:
-                    return 0;
-            }
+            var claimRequestIds = claimIds.Split(',');
+            ClaimRequest claimRequest = null;
+            BeginTransaction();
             try
             {
-                claimRequest.AuditTrail += string.Format("{0} by <<{1}>> on <<{2}>>",approveType.ToString(), staffId, DateTime.Now.ToString());
-                requestRepository.Update(claimRequest);
+                foreach (var item in claimRequestIds)
+                {
+                    claimRequest = requestRepository.GetById(item);
+                    if (claimRequest == null)
+                    {
+                        error.Add("Claim Request is not exists");
+                        return 0;
+                    }
+                    switch (approveType)
+                    {
+                        case ApproveType.Submit:
+                            if (claimRequest.Status.Equals(ClaimStatus.DRAFT))
+                            {
+                                claimRequest.Status = ClaimStatus.PENDING_APPROVAL;
+                            }
+                            break;
+                        case ApproveType.Approve:
+                            if (claimRequest.Status.Equals(ClaimStatus.PENDING_APPROVAL))
+                            {
+                                claimRequest.Status = ClaimStatus.APPROVED;
+                            }
+                            break;
+                        case ApproveType.Return:
+                            if (claimRequest.Status.Equals(ClaimStatus.PENDING_APPROVAL))
+                            {
+                                claimRequest.Status = ClaimStatus.DRAFT;
+                            }
+                            break;
+                        case ApproveType.Reject:
+                            if (claimRequest.Status.Equals(ClaimStatus.DRAFT))
+                            {
+                                claimRequest.Status = ClaimStatus.PENDING_APPROVAL;
+                            }
+                            break;
+                        case ApproveType.Paid:
+                            if (claimRequest.Status.Equals(ClaimStatus.APPROVED))
+                            {
+                                claimRequest.Status = ClaimStatus.PAID;
+                            }
+                            break;
+                        case ApproveType.Cancel:
+                            if (claimRequest.Status.Equals(ClaimStatus.DRAFT))
+                            {
+                                claimRequest.Status = ClaimStatus.CANCELLED;
+                            }
+                            break;
+                        default:
+                            return 0;
+
+                    }
+                    claimRequest.AuditTrail += string.Format("{0} by <<{1}>> on <<{2}>>", approveType.ToString(), staffId, DateTime.Now.ToString());
+                    requestRepository.Update(claimRequest);
+                }
+                CommitTransaction();
                 return requestRepository.Save();
             }
             catch (Exception ex)
             {
                 error.Add(ex.Message);
+                RollbackTransaction();
                 return 0;
             }
+            
         }
 
         public void BeginTransaction()
@@ -93,7 +104,7 @@ namespace Business
             requestRepository.CommitTransaction();
         }
 
-        public void Download(List<string> error) //chua xong
+        public Stream Download(List<string> error) //chua xong
         {
             throw new NotImplementedException();
         }
@@ -129,13 +140,13 @@ namespace Business
             return claimRequest;
         }
 
-        public IEnumerable<ClaimRequest> GetByOneOrMoreStatus(string status, List<string> error)
+        public IEnumerable<ClaimRequest> GetByOneOrMoreStatus(string[]status, List<string> error)
         {
             IEnumerable<ClaimRequest> claimRequests = new List<ClaimRequest>();
             try
             {
                 claimRequests = requestRepository.GetAll()
-                                                 .Where(cr => status.Trim().ToLower().Contains(cr.Status.ToLower()))
+                                                 .Where(cr => status.Contains(cr.Status.ToLower()))
                                                  .ToList();
             }
             catch (Exception ex)
@@ -145,14 +156,14 @@ namespace Business
             return claimRequests;
         }
 
-        public IEnumerable<ClaimRequest> GetMyClaimByOneOrMoreStatus(string staffId, string status, List<string> error)
+        public IEnumerable<ClaimRequest> GetMyClaimByOneOrMoreStatus(string staffId, string[]status, List<string> error)
         {
             IEnumerable<ClaimRequest> claimRequests = new List<ClaimRequest>();
             try
             {
                 claimRequests = requestRepository.GetAll()
                                              .Where(cr => cr.StaffId.Equals(staffId))
-                                             .Where(cr => status.Trim().ToLower().Contains(cr.Status.ToLower()))
+                                             .Where(cr => status.Contains(cr.Status.ToLower()))
                                              .ToList();
             }
             catch (Exception ex)

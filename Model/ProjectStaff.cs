@@ -22,9 +22,10 @@ namespace DTO
         [Required(ErrorMessage = "Please Enter Staff ID")]
         public int StaffId { get; set; }
         [Required(ErrorMessage ="Please enter Status")]
+        [MaxLength(20, ErrorMessage = "Character length is over 20")]
         public string Status { get; set; }
         [Required(ErrorMessage ="Please enter Add On")]
-        [MaxLength(20,ErrorMessage = "Character length is over 20")]
+        
         public DateTime AddOn { get; set; }
         public DateTime ModifierDate { get; set; }
         [Display(Name = "Role In Project")]

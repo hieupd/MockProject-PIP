@@ -32,21 +32,23 @@ namespace DTO
         public int ProjectId { get; set; }
 
         [Display(Name = "Approver Id")]
-        [ForeignKey("Approver")]
+        [ForeignKey("Staff")]
         [Required(ErrorMessage = "Please enter Approver Id")]
         public int ApproverId { get; set; }
+
+        [Display(Name = "Created Date")]
+        public DateTime CreatedDate { get; set; }
 
         [Display(Name = "Approved Date")]
         public DateTime? ApprovedDate { get; set; }
 
         [Display(Name = "Submitted Date")]
         [Required]
-        public DateTime SubmittedDate { get; set; }
+        public DateTime? SubmittedDate { get; set; }
         [Required(ErrorMessage = "Please enter AuditTrail")]
         public string AuditTrail { get; set; }
 
         public virtual Staff Staff { get; set; }
-        public virtual Staff Approver { get; set; }
         public virtual Project Project { get; set; }
         public virtual ICollection<ClaimRequestDetail> ClaimRequestDetails { get; set; }
     }
