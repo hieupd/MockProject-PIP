@@ -28,7 +28,7 @@ namespace DAL
                 new Department{DepartmentName="dept 1"},
                 new Department{DepartmentName="dept 1"},
             };
-            context.JobRanks.AddRange(departments);
+            context.Departments.AddRange(departments);
 
             List<Staff> staffs = new List<Staff>
             {
